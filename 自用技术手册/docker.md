@@ -1,7 +1,11 @@
+# docker
+
 以Ubuntu24.04且部署在大陆以外的服务器为例，介绍最新最潮的下载安装
 [Install Docker Engine on Ubuntu | Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
->国内服务器折腾起来十分麻烦，但依旧有解，这里挖一个坑
-**下载：**
+
+> 国内服务器折腾起来十分麻烦，但依旧有解，这里挖一个坑
+> **下载：**
+
 ```shell
 sudo apt remove $(dpkg --get-selections docker.io docker-compose docker-compose-v2 docker-doc podman-docker containerd runc | cut -f1)
 
@@ -28,6 +32,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 ```
 
 如果网络环境正常的话，理论上这一路下来可以十分爽快地复制粘贴，接下来设置sudo组，免得搞个docker回回得输入sudo
+
 ```shell
 # 1. 创建 docker 用户组（如果已存在会提示，无影响）
 sudo groupadd docker
@@ -41,11 +46,12 @@ newgrp docker
 
 ojbk。接下来是docker常见指令：
 **镜像操作：**
+
 1. 检索：`docker search`
 2. 下载：`docker pull`
 3. 列表：`docker images`
 4. 删除镜像：`docker rmi`
-**容器操作：**
+   **容器操作：**
 5. 删除容器：`docker rm`
 6. 运行：`docker run`
 7. 查看：`docker ps`
@@ -54,4 +60,4 @@ ojbk。接下来是docker常见指令：
 10. 状态：`docker stats
 11. 日志：`docker logs`
 12. 进入：`docker exec`
-加上`--help`可查看帮助
+    加上`--help`可查看帮助
