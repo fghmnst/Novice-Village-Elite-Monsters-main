@@ -4,7 +4,8 @@
 [Install Docker Engine on Ubuntu | Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
 
 > 国内服务器折腾起来十分麻烦，但依旧有解，这里挖一个坑
-> **下载：**
+
+**下载：**
 
 ```shell
 sudo apt remove $(dpkg --get-selections docker.io docker-compose docker-compose-v2 docker-doc podman-docker containerd runc | cut -f1)
@@ -45,19 +46,28 @@ newgrp docker
 ```
 
 ojbk。接下来是docker常见指令：
+
+> 见尚硅谷的docker速通教程
+> [Docker教程，3小时速通，docker部署到实战！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Zn4y1X7AZ?spm_id_from=333.788.videopod.sections&vd_source=aec394c063dc8df9e287dfd78e682b5f)
+> 这个教程我用edge开不知为何会卡得飞起，用chrome就没这个问题了。为什么呢？
+> 是啊，为什么。
+
 **镜像操作：**
 
 1. 检索：`docker search`
 2. 下载：`docker pull`
 3. 列表：`docker images`
 4. 删除镜像：`docker rmi`
-   **容器操作：**
-5. 删除容器：`docker rm`
-6. 运行：`docker run`
-7. 查看：`docker ps`
-8. 停止：`docker start`
-9. 重启：`docker restart`
-10. 状态：`docker stats
-11. 日志：`docker logs`
-12. 进入：`docker exec`
-    加上`--help`可查看帮助
+
+**容器操作：**
+
+1. 删除容器：`docker rm`
+2. 运行：`docker run`
+3. 查看：`docker ps`
+4. 停止：`docker start`
+5. 重启：`docker restart`
+6. 状态：`docker stats
+7. 日志：`docker logs`
+8. 进入：`docker exec`
+   > 加上`--help`可查看帮助
+   >

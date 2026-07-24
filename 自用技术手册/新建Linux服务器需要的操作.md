@@ -1,9 +1,11 @@
 # 新建Linux服务器需要的操作
 
 [详解如何 SSH 远程登录自己的 Linux 服务器 - 雨月空间站](https://mintimate.cn/2021/12/03/connectToLinux/#%E5%86%99-SSH-Config)
-**本文有大量删减，详情见原文**
-0. 更新系统软件包（sudo apt upgrade)
 
+
+**本文有大量删减，详情见原文**
+
+0. 更新系统软件包（sudo apt upgrade，Ubuntu)
 1. 配置ssh
 2. 创建普通用户
 3. 关闭密码登录
